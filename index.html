@@ -1,11 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natures Platter</title>
+
+    <!-- Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
+    <!-- Font Sora Style -->
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+
+
+    <!-- Tailwind CDN 3.4.17 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        // 'bike-primary': '#E76F51',
+                        'button-primary': '#179800',
+                    }
+                }
+            },
+
+            daisyui: {
+                themes: [
+                    {
+                        mytheme: {
+                            "buttonPrimary": "#179800",
+                        },
+                    },
+                ],
+            },
+        };
+    </script>
+
+
+
+
 </head>
-<body>
-    <h1>Hello</h1>
+
+<body class="font-sora">
+    <header class="bg-gradient-to-t from-[#EFEBE3] to bg-[#FFFFFF] ">
+        <!-- navbar section -->
+        <nav class="">
+            <div class="navbar ">
+                <div class="navbar-start">
+
+                    <!-- the dropdown -->
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- nav brand -->
+                    <a class="btn btn-ghost text-xl"><img src="./assets/logo-header.png" alt=""></a>
+
+                </div>
+
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end">
+                    
+                    <button class="btn border-[#179800] font-normal">Login</button>
+                    <button class="btn text-white font-normal bg-button-primary hover:bg-green-800">Register</button>
+
+                    <!-- <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+
+
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <section class="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex id earum, possimus a nemo illum aliquam
+                dignissimos assumenda illo molestias, labore rem accusamus consequuntur iusto quisquam unde quas!
+                Doloribus provident aliquam ipsum natus, assumenda vitae eos fuga accusantium a facilis eveniet quo iure
+                dolores velit deserunt tempora repellendus nobis repellat modi id perferendis? Nesciunt similique
+                reiciendis repellat laudantium corporis iure sunt architecto magnam modi omnis tempora rem cum deleniti
+                perferendis, totam saepe vitae, laboriosam minima ullam temporibus accusamus doloremque? Velit deserunt
+                quasi nulla numquam! Fugiat, natus recusandae. Obcaecati qui, cumque ratione eligendi aspernatur officia
+                ipsum recusandae? Debitis quaerat laudantium a ipsa. Dolore rerum cumque quam id. Id saepe facilis
+                error. Commodi aut autem voluptatem suscipit dolores iure. Fugit beatae deserunt nulla minus ullam
+                provident enim voluptatibus asperiores fugiat maiores, quibusdam tempore nobis quas omnis consectetur
+                animi, deleniti suscipit reprehenderit harum doloribus iste laborum incidunt quasi! Aliquam corrupti
+                dignissimos inventore numquam atque sed officiis maxime asperiores, odit reprehenderit ab, mollitia eos
+                fuga distinctio dolore similique perferendis dolor tempora consectetur. Ullam iure qui, ut molestias
+                exercitationem porro maxime ipsa veniam, aliquid, id sequi error esse quas! Quisquam, magnam asperiores
+                deserunt fuga suscipit esse voluptate nostrum laudantium, nisi temporibus earum sunt vel explicabo
+                placeat tempora consectetur deleniti! Dolore blanditiis est cum placeat tempora cumque, at
+                necessitatibus. At totam temporibus nisi saepe fuga, quae natus eveniet cupiditate itaque quaerat autem,
+                officiis veritatis, in dicta quisquam ut nemo numquam eius optio quas quo obcaecati! Ducimus nobis minus
+                iusto, aspernatur voluptas deleniti quidem iste aut porro praesentium ea ipsam necessitatibus earum
+                quibusdam alias, laboriosam unde natus fugit at, qui inventore repudiandae! Mollitia, iste? Corrupti
+                perspiciatis dolor provident, doloremque, facilis rem totam quis numquam, nobis debitis similique
+                accusamus obcaecati inventore dolore ut animi! Et possimus itaque atque quod aperiam cumque, nesciunt
+                pariatur deserunt assumenda, voluptatum libero consectetur.</p>
+        </section>
+
+    </header>
+
+
+    <main>
+
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+
+
+
+
 </body>
+
 </html>
